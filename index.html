@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content" id="chk">
+        <div class="dark_light_mode">
+          <input type="checkbox" class="Checkbox" id="check" />
+          <label class="label" for="check">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+
+        <div class="display">
+          <div id="past_input" class="past_input"></div>
+          <input type="text" class="display_num" id="input" disabled readonly />
+        </div>
+
+        <div class="buttons">
+          <div class="btn">
+            <div class="color blue_bg" onclick="clearScreen()">C</div>
+          </div>
+          <div class="btn">
+            <div class="color blue_bg" onclick="display('%')">%</div>
+          </div>
+          <div class="btn">
+            <div class="color blue_bg" onclick="Clear()">
+              <i class="fa-solid fa-delete-left"></i>
+            </div>
+          </div>
+          <div class="btn">
+            <div class="color red_bg" onclick="display('/')">/</div>
+          </div>
+          <div class="btn">
+            <div class="color dark_white" onclick="display('7')">7</div>
+          </div>
+          <div class="btn">
+            <div class="color dark_white" onclick="display('8')">8</div>
+          </div>
+          <div class="btn">
+            <div class="color dark_white" onclick="display('9')">9</div>
+          </div>
+          <div class="btn">
+            <div class="color red_bg" onclick="display('*')">x</div>
+          </div>
+          <div class="btn">
+            <div class="color dark_white" onclick="display('4')">4</div>
+          </div>
+          <div class="btn">
+            <div class="color dark_white" onclick="display('5')">5</div>
+          </div>
+          <div class="btn">
+            <div class="color dark_white" onclick="display('6')">6</div>
+          </div>
+          <div class="btn">
+            <div class="color red_bg" onclick="display('-')">-</div>
+          </div>
+          <div class="btn">
+            <div class="color dark_white" onclick="display('1')">1</div>
+          </div>
+          <div class="btn">
+            <div class="color dark_white" onclick="display('2')">2</div>
+          </div>
+          <div class="btn">
+            <div class="color dark_white" onclick="display('3')">3</div>
+          </div>
+          <div class="btn">
+            <div class="color red_bg" onclick="display('+')">+</div>
+          </div>
+          <div class="btn">
+            <div class="color dark_white" onclick="display('00')">00</div>
+          </div>
+          <div class="btn">
+            <div class="color dark_white" onclick="display('0')">0</div>
+          </div>
+          <div class="btn">
+            <div class="color dark_white" onclick="display('.')">.</div>
+          </div>
+          <div class="btn">
+            <div class="color red_bg" onclick="calculate()" id="calculate">
+              =
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
