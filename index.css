@@ -81,6 +81,7 @@ body {
   padding: 10px;
   position: relative;
 }
+/* It is given so that when you select in input section no words will select */
 .display:after {
   position: absolute;
   content: "";
@@ -89,11 +90,13 @@ body {
   z-index: 100;
   left: 0;
 }
+/* ..... */
 #past_input {
   position: absolute;
   font-size: 20px;
   transition: 0.4s;
-  right: 10px;
+  right: 12px;
+  color: #fff;
 }
 #past_input[animate="1"] {
   animation: past_input 0.2s linear;
@@ -112,19 +115,22 @@ body {
 
 .display > input {
   width: 100%;
-  padding: 30px 0 0 12px;
+  padding: 30px 2px 0 12px;
   outline: none;
   text-align: right;
   font-size: 2rem;
   border: unset;
-}
-.dark .display > input {
   background-color: #292c35;
   color: #fff;
 }
-.dark .past_input {
-  color: #fff;
+.dark .display > input {
+  background-color: #fff;
+  color: #292c35;
 }
+.dark #past_input {
+  color: #292c35;
+}
+
 .buttons {
   position: absolute;
   bottom: 0;

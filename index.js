@@ -3,6 +3,7 @@ const past_input = document.getElementById("past_input");
 
 function clearScreen() {
   input.value = "";
+  past_input.innerHTML = "";
 }
 
 function Clear() {
